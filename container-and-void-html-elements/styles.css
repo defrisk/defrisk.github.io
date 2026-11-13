@@ -16,13 +16,39 @@ body {
   line-height: 1.6;
 }
 
-/* Sticky Header & Horizontal Navigation */
+/* Sticky Header & Separated Navigation */
 header {
   background-color: #0f172a;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.home-link,
+.nav-spacer {
+  flex: 1;
+}
+
+.home-link {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.home-link:hover {
+  color: #ffffff;
 }
 
 nav ul {
@@ -32,13 +58,13 @@ nav ul {
   gap: 2rem;
 }
 
-nav a {
+nav ul a {
   color: #f8fafc;
   text-decoration: none;
   font-weight: 600;
 }
 
-nav a:hover {
+nav ul a:hover {
   color: #60a5fa;
 }
 
