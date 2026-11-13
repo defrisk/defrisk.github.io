@@ -34,4 +34,4 @@ Each web-based project lives in its own dedicated subdirectory and is automatica
 ```text
 ├── index.html          # Main portfolio landing page
 ├── styles.css          # Global portfolio styles
-└── html-tag-guide/     # Project 1: HTML & CSS Reference Guide
+└── container-and-void-html-elements/     # Project 1: Simple HTML Reference Guide Website
