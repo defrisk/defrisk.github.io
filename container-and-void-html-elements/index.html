@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Closing and Void Tag Reference Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#container-elements">Container Elements</a></li>
+        <li><a href="#void-elements">Void Elements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Introduction -->
+    <section id="introduction">
+      <h1>HTML Closing and Void Tag Reference Guide</h1>
+      <p>
+        In HTML, whether a tag requires a closing tag depends on a single rule: 
+        <strong>Does the element wrap around content, or is it the content itself?</strong>
+      </p>
+      <p>
+        <strong>Container elements</strong> act like boxes that hold text, media, or other HTML tags. 
+        They require an opening tag (<code>&lt;tag&gt;</code>) and a closing tag (<code>&lt;/tag&gt;</code>) 
+        so the browser knows where the box begins and ends. <strong>Void elements</strong> are standalone 
+        items inserted at a specific point in the document. Because nothing ever goes inside them, 
+        they do not have closing tags.
+      </p>
+    </section>
+
+    <!-- Section 2: Container Elements -->
+    <section id="container-elements">
+      <h2>Container Elements (Require Closing Tags)</h2>
+      <p>
+        These elements wrap around content. Even if a container is left intentionally empty, 
+        you must still include its closing tag.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Common Tags</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Document Structure</td>
+            <td><code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;title&gt;</code></td>
+            <td>Defines the core framework and metadata of the webpage.</td>
+          </tr>
+          <tr>
+            <td>Layout &amp; Grouping</td>
+            <td><code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code></td>
+            <td>Groups elements together for page structure and CSS styling.</td>
+          </tr>
+          <tr>
+            <td>Text &amp; Headings</td>
+            <td><code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code></td>
+            <td>Formats headings, paragraphs, and emphasized text.</td>
+          </tr>
+          <tr>
+            <td>Lists</td>
+            <td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td>
+            <td>Wraps unordered (bulleted) or ordered (numbered) lists and individual list items.</td>
+          </tr>
+          <tr>
+            <td>Links &amp; Interactive</td>
+            <td><code>&lt;a&gt;</code>, <code>&lt;button&gt;</code></td>
+            <td>Wraps clickable text or icons for hyperlinks and UI buttons.</td>
+          </tr>
+          <tr>
+            <td>Forms &amp; Controls</td>
+            <td><code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;option&gt;</code></td>
+            <td>Creates user input forms, labels, multi-line text boxes, and dropdown menus.</td>
+          </tr>
+          <tr>
+            <td>Tables</td>
+            <td><code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tr&
